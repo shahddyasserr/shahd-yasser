@@ -1,0 +1,249 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,700;1,100;1,200;1,300;1,500;1,600;1,700;1,900&display=swap');
+  
+*{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    scroll-behavior:smooth;
+}
+
+header{
+    background-color: #6d6875;
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 200px;
+}
+
+
+.logo{
+    text-decoration: none;
+    color: #b5838d;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+.navigation a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    padding-left: 50px;
+}
+
+.navigation a:hover{
+    color: #b5838d;
+} 
+
+section{
+    padding: 100px 200px;
+}
+.home{
+    width: 100px;
+    min-height: 100vh;
+    display: flex;
+}
+.main h1{
+    color: #e5989b;
+    font-size: 1.9em;
+    font-weight: 700;
+    margin-bottom: 30px;
+    padding-bottom: 70px;
+}
+.main h4{
+    color: #e5989b;
+    font-size: 2em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.main-btn{
+    color:#e5989b;
+    background:  #b5838d;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9em;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    margin-top: 20px;
+    transition: 0.7s ease;
+}
+.main-btn:hover{
+    background-color: #ffcdb2;
+    transform: scale(1.1);
+}
+section::after {
+    content: "";
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #C38eb4;
+    margin-top: 50px;
+  }
+  
+
+.title{
+    display: flex;
+    justify-content: center;
+    color: #6d6875;
+    font-size: 3em;
+    font-weight: 800;
+    margin-bottom: 90px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.card{
+    background-color: #f3f3f3;
+    width: 15.5em;
+    box-shadow: 0.5px 25px rgba(165, 162, 162, 0.55);
+    border-radius: 19px;
+    padding: 16px;
+    margin: 15px;
+    transition: 0.7s ease;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+ 
+  
+.icon{
+    color:#b5838d;
+    font-size: 7em;
+    text-align: center;
+}
+  
+.collections .content{
+    margin-top: 30px;
+}
+.collections-card{
+    background-color: #f3f3f3;
+    min-height: 20em;
+    width: 200px;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 15px;
+    position: relative;
+    transition: 0.7s ease;
+    margin-bottom: 30px; /* Add margin-bottom to create space between cards */
+}
+
+.collections-card:hover{
+    transform: scale(1.1);
+}
+
+.collections-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.collections-image img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute; /* set position to absolute */
+    top: 0; /* position image at top left corner of container */
+    left: 0;
+    filter: blur(5px);
+    transition: filter 0.5s ease; /* Add transition to the filter property */
+}
+
+.collections-card:hover .collections-image img {
+    filter: blur(0); /* Remove blur on hover */
+}
+
+.collections-info{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: background-color 0.5s ease; /* Add transition to the background-color property */
+}
+
+.collections-card:hover .collections-info{
+    background-color: rgba(255, 255, 255, 1); /* Change background-color on hover */
+}
+
+.contact -title{
+    size: 0.8em;
+    color: #080707;
+}
+.contact .icon{
+    font-size: 4.5em;
+}
+.contact .info h2{
+    color: hwb(0 2% 98%);
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #b5838d;
+    padding: 10px;
+    text-align: left;
+    font-size: 14px;
+    color: #6d6875;
+  }
+  
+  .social-icons {
+    display: flex;
+    justify-content: left;
+    align-items: end;
+  }
+  
+  .social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+  }
+  
+  .social-icons a i {
+    font-size: 24px;
+    color: #000;
+    transition: color 0.3s ease-in-out;
+  }
+  
+  .social-icons a i:hover {
+    color: #4b4949;
+    transform: scale(1.2);
+  transition: all 0.3s ease-in-out;
+  }
+  
+.search {
+    justify-content: center;
+    display: contents;
+  } 
+  .search input[type="text"] {
+    padding: 2px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 16px;
+    width: 200px;
+    margin-right: 5px;
+  }
+  .search button[type="submit"] {
+    padding: 2px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+  }
+  .search button[type="submit"]:hover {
+    background-color: #555;
+  }
